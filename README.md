@@ -101,7 +101,7 @@ Try it yourself in the [Playground](https://www.openui.com/playground): generate
 | [`@openuidev/react-headless`](./packages/react-headless) | Headless chat state, streaming adapters, message format converters |
 | [`@openuidev/react-ui`](./packages/react-ui) | Prebuilt chat layouts and two built-in component libraries |
 | [`@openuidev/cli`](./packages/openui-cli) | CLI for scaffolding apps and generating system prompts |
-| [`@openuidev/openclaw-os-plugin`](https://github.com/thesysdev/openclaw-os/tree/main/packages/claw-plugin) | OpenClaw OS plugin for serving OpenUI-powered OpenClaw workspaces |
+| [`@openuidev/openclaw-os-plugin`](https://github.com/thesysdev/openclaw-os/tree/main/packages/claw-plugin) | OpenClaw OS plugin for serving OpenUI-powered OpenClaw workspaces | 
 
 ```bash
 npm install @openuidev/react-lang @openuidev/react-ui
@@ -164,6 +164,21 @@ Good places to start:
 
 - [Discord](https://discord.com/invite/Pbv5PsqUSv) - Ask questions, share what you're building
 - [GitHub Issues](https://github.com/thesysdev/openui/issues) - Report bugs or request features
+
+## How OpenUI compares
+
+| Feature                |             OpenUI |           json-render (Vercel) |     A2UI (Google) | CopilotKit OpenGenUI |
+|------------------------|-------------------:|-------------------------------:|------------------:|---------------------:|
+| Tokens                 |                 1x |                             3x |                3x |                   4x |
+| Latency (60 tok/s)     |               4.9s |                          14.2s |             14.2s |                 ~20s |
+| Streaming              |                Yes |                            Yes |               Yes |              Partial |
+| Consistent output      |                Yes |                            Yes |               Yes |                   No |
+| Components             |   Library + custom |               Library + custom |       Custom only |                 None |
+| Multi-platform         | Web, mobile, email | Web, mobile, PDF, email, video | Web, iOS, Android |                  Web |
+| Built-in data fetching |                Yes |                             No |                No |                   No |
+| Chat UI included       |                Yes |                             No |                No |                  Yes |
+
+For more details, refer to the official [OpenUI Lang comparison documentation](https://www.openui.com/docs/openui-lang/comparison).
 
 ## Adopters
 
